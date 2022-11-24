@@ -30,11 +30,11 @@ function App() {
       }
       if (animationState === 1) {
         setClassNameCard(classNameCard + ' card-transitionNone')
-        setQuoteRandom(getRandomFromArray(quotes))
       }
       if (animationState === 2) {
         setClassNameCard('card')
         setColorRandom(getRandomFromArray(colors))
+        setQuoteRandom(getRandomFromArray(quotes))
       }
       if (animationState === 3) clearInterval(a)
       animationState += 1
